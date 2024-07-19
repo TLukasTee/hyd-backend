@@ -36,7 +36,7 @@ const DB_DATABASE = process.env.DB_DATABASE
 
 const DATABASE_URL = 
   `postgres://${DB_USERNAME}:${DB_PASSWORD}` + 
-  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
+  `@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
@@ -84,9 +84,8 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   database_extra: { ssl: { rejectUnauthorized: false } },
-  redis_url: REDIS_URL
-
   // Uncomment the following lines to enable REDIS
+  redis_url: REDIS_URL
 
 };
 
