@@ -107,7 +107,7 @@ const plugins = [
     order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID,
     localization: {
       "de-DE": { // locale key
-        order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID_LOCALIZED,
+        order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID,
       },
     },
   },
