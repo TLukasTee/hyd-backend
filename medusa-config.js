@@ -125,7 +125,14 @@ const plugins = [
         secret_access_key: process.env.SPACE_SECRET_ACCESS_KEY,
     },
   },
-  
+  {
+    resolve: `medusa-payment-paypal`,
+    options: {
+      clientId: process.env.PAYPAL_CLIENT_ID,
+      clientSecret: process.env.PAYPAL_CLIENT_SECRET,
+      authWebhookId: process.env.PAYPAL_AUTH_WEBHOOK_ID,
+    },
+  },
 ];
 
 const modules = {
